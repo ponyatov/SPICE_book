@@ -1,0 +1,11 @@
+*~
+*.swp
+*.log
+
+/doc
+/docs/
+/SPICE/
+
+/__pycache__/
+
+!.gitignore

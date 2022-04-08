@@ -1,0 +1,43 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make meta \u000D"}}]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make pdf  \u000D"}}]
+        },
+    ],
+
+    // \ files
+    "files.exclude": {
+        "**/SPICE":true,
+        "**/docs/**":true,
+        "**/__pycache__/**":true,
+    },
+    "files.watcherExclude": {
+        "**/docs/**":true,
+        "**/__pycache__/**":true,
+    },
+    "files.associations": {
+    },
+    // / files
+
+    // \ editor
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    "git.ignoreLimitWarning": true,
+    // / editor
+
+    // \ tex
+    "latex-workshop.latex.autoBuild.run": "never"
+    // / tex
+}

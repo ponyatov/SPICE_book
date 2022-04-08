@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "ryuta46.multi-command",
+        "stkb.rewrap",
+        "tabnine.tabnine-vscode",
+        // "auchenberg.vscode-browser-preview",
+        // "ms-vscode-remote.remote-ssh",
+        // "ms-azuretools.vscode-docker",
+        // \ test
+        "hbenl.vscode-test-explorer",
+        // / test
+        "tht13.python",
+        "james-yu.latex-workshop",
+    ]
+}

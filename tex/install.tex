@@ -1,0 +1,71 @@
+\clearpage
+\secly{Установка программного обеспечения}
+
+\subsecly{\ngs}
+
+\url{http://ngspice.sourceforge.net/}
+
+\medskip\noindent
+OpenSource-реализация пакета SPICE: симулятор электрических и электронных схем,
+который позволяет разрабатывать разнообразные аналогово-цифровые электронные
+устройства и интегральные схемы.
+
+\subsecly{\ki}
+
+\noindent
+программный комплекс класса EDA САПР с открытым исходным кодом, предназначенный
+для разработки электрических схем и печатных плат.
+
+\subsecly{подготовка проекта}
+
+github: \url{https://github.com/ponyatov/SPICE}
+
+\begin{verbatim}
+~$ git clone -o gh https://github.com/ponyatov/SPICE ~/SPICE
+~$ cd ~/SPICE ; make install
+\end{verbatim}
+\begin{verbatim}
+~/SPICE/$ git pull -v
+~/SPICE/$ make upgrade
+\end{verbatim}
+
+\noindent
+Для быстрого старта вы можете склонировать себе полный набор файлов этой книжки,
+включая все файлы примеров, полный текст книги в формате \LaTeX, иллюстрации,
+примеры исходного кода библиотек и т.п.
+
+В комплекте идёт файл управления проектом \mkf\ \ref{make}, в котором есть цели
+для установки и обновления нужных пакетов операционной системы (с некоторыми
+излишествами).
+
+\clearpage
+Если вы не хотите пользоваться \git\ \ref{git}
+
+% \clearpage
+\subsecly{\linux}
+
+\noindent
+Предпочтительнее сразу учиться работать в \linux: есть определённые риски, что в
+какой-то момент придётся переходить на отечественные процессоры, а там это
+единственная доступная операционная система\note{собственно, приказ о запрете
+применения импортного с 2025 года \emph{уже подписан}, и \win\ вполне может тоже
+попасть в список}. Как вариант, компьютеры Raspberry Pi являются дешёвой
+альтернативой полноразмерной персоналке.
+
+\begin{verbatim}
+$ sudo apt update
+$ sudo apt install -yu git make curl
+\end{verbatim}
+
+\begin{description}[nosep]
+\item{\textbf{sudo}} вы работаете из под пользователя, а для запуска
+                    \term{пакетного менеджера} нужны привелегии администратора
+\item{\textbf{apt}} в Debian GNU/Linux и Ubuntu используется \prog{apt}
+\item{\textbf{-y}
+}\item{\textbf{-u}
+}\item{\textbf{git}}
+\item{\textbf{make}}
+\item{\textbf{curl}}
+\end{description}
+
+\subsecly{\win}
